@@ -54,7 +54,7 @@ transform [flags]
 | -------------- | --------------------------- | ---------------------------------------------- |
 | `-dir`         | `.`                         | Directory containing `*.json` files            |
 | `-retry`       | `""`                        | File with list of failed files to retry        |
-| `-api`         | `https://api.example.com/v2`| Base URL for the Omnipub API                   |
+| `-api`         | `https://cashmere.io/api/v2`| Base URL for the Omnipub API                   |
 | `-collection`  | `0`                         | (Optional) Collection ID to attach             |
 | `-workers`     | `10`                        | Number of concurrent upload workers            |
 | `-backoff`     | `0`                         | Milliseconds to wait between requests (rate limiting) |
@@ -73,7 +73,7 @@ transform [flags]
 2. **Custom API base & collection**  
    ```bash
    export MY_KEY="abc123"
-   transform -dir data -api https://api.example.com/v2 \
+   transform -dir data -api https://cashmere.io/api/v2 \
              -collection 42 \
              -key-env MY_KEY
    ```

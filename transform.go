@@ -163,7 +163,7 @@ func (t *Transformer) processFile(ctx context.Context, file string, collectionID
 func main() {
 	dir := flag.String("dir", ".", "Directory with .json files")
 	retryFile := flag.String("retry", "", "File with list of failed files to retry")
-	api := flag.String("api", "https://api.example.com/v2", "Omnipub API base")
+	api := flag.String("api", "https://cashmere.io/api/v2", "Omnipub API base")
 	collection := flag.Int("collection", 0, "Optional collection_id")
 	workers := flag.Int("workers", 10, "Concurrent workers (≈ open TCP conns)")
 	backoff := flag.Int("backoff", 0, "Backoff interval in milliseconds between retries (0 = no backoff)")
